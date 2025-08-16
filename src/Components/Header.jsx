@@ -6,7 +6,7 @@ const Header = () => {
      <div className="container-fluid sticky-top">
         <div className="container">
             <nav className="navbar navbar-expand-lg navbar-dark p-0">
-                <Link  to="/" className="navbar-brand">
+                <Link  to="https://humzarafaqat.github.io/ai/" className="navbar-brand">
                     <h1 className="text-white">AI<span className="text-dark">.</span>Tech</h1>
                 </Link>
                 <button type="button" className="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
