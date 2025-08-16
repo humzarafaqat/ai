@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import Subscribe from './Components/Subscribe'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Faq from './Pages/Faq'
+import Services from './Pages/Services'
+import Project from './Pages/Project'
+import Team from './Pages/Team'
+import Contact from './Pages/Contact'
+
+
+import { HashRouter, Routes, Route , Link  } from 'react-router-dom';
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+    <div>
+     
+    <HashRouter>
+     <Header />
+          <Routes>
+              <Route path="/" element={<Home />} /> 
+              <Route path="/About" element={<About />} />
+              <Route path="/Faq" element={<Faq />} />
+              <Route path="/Services" element={<Services />} />
+              <Route path="/Project" element={<Project />} />
+              <Route path="/Contact" element={<Contact />} />
+              <Route path="/Team" element={<Team />} />
+          </Routes>
+       <Subscribe />
+      <Footer />
+    </HashRouter>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
