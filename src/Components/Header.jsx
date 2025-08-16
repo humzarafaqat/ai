@@ -6,9 +6,10 @@ const Header = () => {
      <div className="container-fluid sticky-top">
         <div className="container">
             <nav className="navbar navbar-expand-lg navbar-dark p-0">
-                <a href="/" className="navbar-brand">
+               
+                  <Link  to="/" className="navbar-brand">
                     <h1 className="text-white">AI<span className="text-dark">.</span>Tech</h1>
-                </a>
+                </Link>
                 <button type="button" className="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
                     <span className="navbar-toggler-icon"></span>
